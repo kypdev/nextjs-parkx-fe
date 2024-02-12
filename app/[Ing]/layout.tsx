@@ -5,7 +5,7 @@ import './globals.css'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 import { dir } from 'i18next'
-// import { languages } from '../i18n/settings'
+import { languages } from '../i18n/settings'
 
 const kanit = Kanit({
   subsets: ['latin', 'latin-ext', 'thai'],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 export async function generateStaticParams() {
-  // return languages.map((lng) => ({ lng }))
+  return languages.map((lng) => ({ lng }))
 }
 
 export default function RootLayout({
