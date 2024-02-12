@@ -16,12 +16,12 @@ const footer = () => {
             <h3 className='text-white m-0 h-[2.56rem] relative text-inherit leading-[3.38rem] font-medium font-inherit inline-block shrink-0 z-[1] mq450:text-[1.38rem] mq450:leading-[2.69rem]'>
               ABOUT PARK X
             </h3>
-            <img
+            {/* <img
               className='w-[7.31rem] h-[2.19rem] relative object-cover z-[1]'
               loading='eager'
               alt=''
               src='/images/parkX-logo-footer.png'
-            />
+            /> */}
           </div>
           <div className='flex flex-col items-start justify-start gap-[1rem] max-w-full'>
             <div className='w-[20.63rem] flex flex-row items-start justify-start py-[0rem] px-[2.06rem] box-border max-w-full'>
@@ -31,25 +31,25 @@ const footer = () => {
             </div>
             <div className='flex flex-row items-start justify-start gap-[1.19rem] text-[0.81rem] text-black'>
               <div className='flex flex-col items-start justify-start gap-[3.75rem]'>
-                <img
+                {/* <img
                   className='w-[1.81rem] h-[1.83rem] relative z-[1]'
                   loading='eager'
                   alt=''
                   src='/images/icons/home-footer.png'
-                />
+                /> */}
                 <div className='flex flex-col items-start justify-start gap-[0.63rem]'>
-                  <img
+                  {/* <img
                     className='w-[1.79rem] h-[1.82rem] relative z-[1]'
                     loading='eager'
                     alt=''
                     src='/images/icons/phone-footer.png'
-                  />
-                  <img
+                  /> */}
+                  {/* <img
                     className='w-[1.81rem] h-[1.84rem] relative z-[1]'
                     loading='eager'
                     alt=''
                     src='/images/icons/mail-footer.png'
-                  />
+                  /> */}
                 </div>
               </div>
               <div className='text-white h-[11.88rem] relative inline-block z-[1]'>

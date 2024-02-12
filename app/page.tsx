@@ -20,7 +20,7 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
         <Carousel useKeyboardArrows={true} showThumbs={false}>
           {images.map((URL, index) => (
             <div key={index} className='slide'>
-              <img alt='sample_file' src={URL} key={index} />
+              {/* <img alt='sample_file' src={URL} key={index} /> */}
             </div>
           ))}
         </Carousel>
