@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const imagesPath = {
   email: '/images/icons/email.png',
   phone: '/images/icons/phone.png',
@@ -8,11 +10,13 @@ const imagesPath = {
 const NavbarComponent = () => {
   return (
     <div className='self-stretch flex flex-row items-start justify-between pt-[1.31rem] pb-[1.06rem] pr-[3.13rem] pl-[2.75rem] box-border relative gap-[1.25rem] max-w-full mq750:flex-wrap mq750:pl-[1.38rem] mq750:pr-[1.56rem] mq750:box-border'>
-      {/* <img
+      <Image
         className='h-full w-full absolute my-0 mx-[!important] top-[0rem] right-[0rem] bottom-[0rem] left-[0rem] max-w-full overflow-hidden max-h-full'
         alt=''
         src='/images/navbar-bg.png'
-      /> */}
+        width={1920}
+        height={62}
+      />
       <div className=' overflow-hidden flex flex-row items-start justify-start gap-[0.81rem] z-[1] ml-28'>
         {/* <img
           className='h-[1.23rem] w-[1.24rem] relative min-h-[1.25rem]'
