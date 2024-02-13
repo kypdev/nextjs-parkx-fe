@@ -7,7 +7,7 @@ const Menubar = () => {
       <div className='flex-1 flex flex-row items-center justify-start gap-[2rem] max-w-full mq750:gap-[1rem]'>
         <Link href={'/'}>
           <Image
-            src={'/images/parkX-logo.png'}
+            src={'/images/parkx-logo.png'}
             alt={''}
             width={240}
             height={72}
