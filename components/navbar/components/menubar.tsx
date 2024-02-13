@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Menubar = () => {
   return (
     <header className='w- flex flex-row items-start justify-start py-[0rem] pr-[2.38rem] pl-[1.25rem] box-border max-w-full text-left text-[1.25rem] text-darkslategray-200 font-kanit'>
-      <div className='flex-1 flex flex-row items-end justify-start gap-[2rem] max-w-full mq750:gap-[1rem]'>
+      <div className='flex-1 flex flex-row items-center justify-start gap-[2rem] max-w-full mq750:gap-[1rem]'>
         <Link href={'/'}>
           <Image
             src={'/images/parkX-logo.png'}

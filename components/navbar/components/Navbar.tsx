@@ -53,12 +53,12 @@ const NavbarComponent = () => {
         <div className='self-stretch flex flex-row items-start justify-start gap-[3.06rem] max-w-full mq450:flex-wrap mq450:gap-[1.5rem]'>
           <div className='flex-1 flex flex-row items-start justify-start gap-[1.63rem] min-w-[14.19rem] max-w-full mq450:flex-wrap text-white'>
             <div className='w-[9.75rem] flex flex-row items-start justify-start gap-[0.31rem]'>
-              {/* <img
+              <img
                 className='h-[1.69rem] w-[1.69rem] relative z-[1]'
                 loading='eager'
                 alt=''
                 src='/images/icons/email.png'
-              /> */}
+              />
               <div className='flex-1 flex flex-col items-start justify-start pt-[0.19rem] px-[0rem] pb-[0rem]'>
                 <div className='self-stretch relative font-medium [text-shadow:0px_1px_4px_rgba(0,_0,_0,_0.25)] z-[1]'>
                   parkx@bhirajburi.co.th
@@ -66,12 +66,12 @@ const NavbarComponent = () => {
               </div>
             </div>
             <div className='flex-1 flex flex-row items-start justify-start gap-[0.31rem] min-w-[6.81rem]'>
-              {/* <img
+              <img
                 className='h-[1.69rem] w-[1.69rem] relative z-[1]'
                 loading='eager'
                 alt=''
                 src='/images/icons/phone.png'
-              /> */}
+              />
               <div className='flex-1 flex flex-col items-start justify-start pt-[0.19rem] px-[0rem] pb-[0rem]'>
                 <div className='self-stretch relative font-medium [text-shadow:0px_1px_4px_rgba(0,_0,_0,_0.25)] z-[1]'>
                   +66 (0) 2726 1999 ต่อ 1921
@@ -79,12 +79,12 @@ const NavbarComponent = () => {
               </div>
             </div>
           </div>
-          {/* <img
+          <img
             className='h-[1.5rem] w-[2.25rem] relative overflow-hidden shrink-0 object-cover z-[1]'
             loading='eager'
             alt=''
             src='/images/icons/engl_flag.png'
-          /> */}
+          />
         </div>
       </div>
     </div>
