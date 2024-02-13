@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 const imagesPath = {
   email: '/images/icons/email.png',
@@ -18,7 +18,7 @@ const NavbarComponent = () => {
         height={62}
       />
       <div className=' overflow-hidden flex flex-row items-start justify-start gap-[0.81rem] z-[1] ml-28'>
-        {/* <img
+        <img
           className='h-[1.23rem] w-[1.24rem] relative min-h-[1.25rem]'
           loading='eager'
           alt=''
@@ -47,7 +47,7 @@ const NavbarComponent = () => {
           loading='eager'
           alt=''
           src='/images/icons/youtube.png'
-        /> */}
+        />
       </div>
       <div className='w-[27.13rem] flex flex-col items-start justify-start pt-[0.88rem] px-[0rem] pb-[0rem] box-border max-w-full'>
         <div className='self-stretch flex flex-row items-start justify-start gap-[3.06rem] max-w-full mq450:flex-wrap mq450:gap-[1.5rem]'>
