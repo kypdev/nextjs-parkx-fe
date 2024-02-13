@@ -1,53 +1,45 @@
-"use client";
-import { Breadcrumb, Space, Typography } from "antd";
-import React from "react";
-import Image from "next/image";
+'use client'
+import { Breadcrumb, Space, Typography } from 'antd'
+import React from 'react'
+import Image from 'next/image'
 
-const { Title, Text } = Typography;
+const { Title, Text } = Typography
 
 const itemBreadcrumb = [
   {
-    title: "Home",
+    title: 'Home',
   },
   {
-    title: "ABOUT PARK X",
+    title: 'ABOUT PARK X',
   },
-];
+]
 
 const page = () => {
   return (
     <>
-      {/* <div className="grid grid-cols-2 w-screen"> */}
-      {/* <div className="col-span-2"> */}
-      <Space className="w-full px-80" direction="horizontal" align="start">
+      <Space className='w-full px-80' direction='horizontal' align='start'>
         <Breadcrumb items={itemBreadcrumb} />
       </Space>
-      {/* </div> */}
-      {/* <div className="col-span-2"> */}
-      <Space className="w-full px-80" direction="horizontal" align="start">
+      <Space className='w-full px-80' direction='horizontal' align='start'>
         <Image
-          src={"/images/main.png"}
-          className="w-screen max-h-96"
-          alt={""}
+          src={'/images/main.png'}
+          className='max-w-7xl max-h-96'
+          alt={''}
           width={1280}
           height={359}
         />
       </Space>
-      {/* </div> */}
-      {/* <div className="col-span-2"> */}
       <Title level={3}>ABOUT PARK X</Title>
-      {/* </div> */}
-      {/* <div className="col-span-2"> */}
-      <Space className="w-full px-80" direction="horizontal" align="start">
+      <Space className='w-full px-80' direction='horizontal' align='start'>
         <Image
-          src={"/images/about/content1.png"}
-          className="max-w-7xl max-h-96"
-          alt={""}
+          src={'/images/about/content1.png'}
+          className='max-w-7xl max-h-96'
+          alt={''}
           width={562}
           height={434}
         />
-        <div className="pr-50 text-lg">
-          <Text className="text-lg">
+        <div className='pr-50 text-lg'>
+          <Text className='text-lg'>
             PARK X focus on customer's need by providing parking services and
             good facilities. Paceng solutions that integrate with the public
             transport system and well located, which make a major oontrihucen to
@@ -75,41 +67,36 @@ const page = () => {
           </ul>
         </div>
       </Space>
-      {/* </div> */}
-
-      {/* <div className="col-span-2"> */}
-      <Space className="w-full px-80" direction="horizontal" align="start">
+      <Space className='w-full px-80' direction='horizontal' align='start'>
         <Image
-          src={"/images/about/content2.png"}
-          className="max-w-7xl max-h-96"
-          alt={""}
+          src={'/images/about/content2.png'}
+          className='max-w-7xl max-h-96'
+          alt={''}
           width={308}
           height={266}
         />
-        <div className="pr-50 text-lg">
-          <Text className="text-xl font-bold">VISION</Text>
+        <div className='pr-50 text-lg'>
+          <Text className='text-xl font-bold'>VISION</Text>
           <br />
-          <Text className="text-lg">
+          <Text className='text-lg'>
             PARK X is no.1 of choice forurban parking solutions
           </Text>
           <br />
-          <Text className="text-xl font-bold">MISSION</Text>
+          <Text className='text-xl font-bold'>MISSION</Text>
           <br />
-          <Text className="text-lg">
+          <Text className='text-lg'>
             Focusing on customer's need by providing perking services and good
             facilities.
           </Text>
           <br />
-          <Text className="text-xl font-bold">OUR VALUE</Text>
+          <Text className='text-xl font-bold'>OUR VALUE</Text>
           <br />
-          <Text className="text-lg">Clean, safe, convenience</Text>
+          <Text className='text-lg'>Clean, safe, convenience</Text>
           <br />
         </div>
       </Space>
-      {/* </div> */}
-      {/* </div> */}
     </>
-  );
-};
+  )
+}
 
-export default page;
+export default page
