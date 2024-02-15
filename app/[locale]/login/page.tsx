@@ -4,8 +4,9 @@ import { Input, Form, Button } from 'antd'
 
 const Home = () => {
   return (
-    <div className=' rounded-11xl bg-white shadow-[0px_4px_4px_rgba(174,_174,_174,_0.25)] box-border flex flex-row items-center justify-start py-[0rem] pr-[0.13rem] pl-[4.88rem] gap-[4.69rem]  border-[1px] border-solid border-seconday-grey-e9e9e9 '>
-      <div className='w-[25rem] flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.56rem] box-border min-w-[25rem] max-w-full mq750:min-w-full mq1025:flex-1'>
+    <div className=' rounded-11xl bg-white shadow-[0px_4px_4px_rgba(174,_174,_174,_0.25)] box-border flex flex-row items-center justify-start 
+    py-3 pl-6 lg:py-[0rem] pr-[0.13rem] lg:pl-[4.88rem] gap-[4.69rem]  border-[1px] border-solid border-secondary-gray '>
+      <div className='w-[25rem] flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.56rem] box-border min-w-[25rem] max-w-full'>
         <Form className='m-0 self-stretch flex flex-col items-start justify-start gap-[1.44rem]'>
           <div className='w-[13.25rem] flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[0.44rem] box-border'>
             <h1 className='m-0  h-[2.81rem] flex-1 relative text-[1.5rem] font-medium font-kanit text-black text-left inline-block z-[2]'>
@@ -19,36 +20,41 @@ const Home = () => {
             <Form.Item
               style={{
                 width: '100%',
+        
               }}
               name='email'
               rules={[
                 {
                   required: true,
                   message: 'กรุณากรอกอีเมล',
+                
                 },
               ]}
             >
               <Input
                 placeholder='อีเมล'
-                className='self-stretch rounded-8xs flex flex-row items-center justify-start py-[0.69rem] px-[0.94rem] z-[2] border-[1px] border-solid border-primary-green placeholder:font-kanit'
+                className=' w-11/12 lg:w-full  self-stretch rounded-8xs flex flex-row items-center justify-start py-[0.69rem] px-[0.94rem] z-[2] border-[1px] border-solid border-primary-green placeholder:font-kanit '
               />
             </Form.Item>
           </div>
+          
+          
+        
           <div className='m-0 h-[1.69rem] relative text-[1.13rem] font-normal font-kanit text-black text-left inline-block z-[2]'>
             รหัสผ่าน
           </div>
           <div className='self-stretch flex flex-col items-end justify-start gap-[0.38rem]'>
             <Input.Password
               placeholder='รหัสผ่าน'
-              className='self-stretch rounded-8xs flex flex-row items-center justify-start py-[0.69rem] px-[0.94rem] z-[2] border-[1px] border-solid border-primary-green placeholder:font-kanit'
+              className='w-11/12 lg:w-full self-stretch rounded-8xs flex flex-row items-center justify-start py-[0.69rem] px-[0.94rem] z-[2] border-[1px] border-solid border-primary-green placeholder:font-kanit'
             />
-            <div className='relative text-[0.75rem] font-light font-kanit text-darkgray-100 text-right z-[2]'>
+            <div className='relative text-[0.75rem] font-light font-kanit text-darkgray-100 text-right z-[2] mr-6 lg:mr-0'>
               ลืมรหัสผ่าน
             </div>
           </div>
 
           <div className='self-stretch flex flex-col items-center justify-start gap-[1.25rem]'>
-            <div className='self-stretch flex flex-col items-start justify-start gap-[0.63rem]'>
+            <div className='w-11/12 lg:w-full self-stretch flex flex-col items-start justify-start gap-[0.63rem]'>
               <button
                 style={{
                   width: '100%',
@@ -60,12 +66,12 @@ const Home = () => {
                   เข้าสู่ระบบ
                 </div>
               </button>
-              <div className='self-stretch flex flex-row items-center justify-center py-[0rem] pr-[0.06rem] pl-[0rem] gap-[0.88rem] mq750:flex-wrap'>
+              <div className='self-stretch flex flex-row items-center justify-center py-[0rem] pr-[0.06rem] pl-[0rem] gap-[0.88rem] '>
                 <div className='h-[1.5rem] relative text-[1rem] font-medium font-kanit text-black text-center flex items-center justify-center z-[2]'>
                   หรือ
                 </div>
               </div>
-              <div className='self-stretch rounded-8xs flex flex-row items-start justify-center py-[0.69rem] pr-[1.25rem] pl-[1.56rem] gap-[0.94rem] whitespace-nowrap z-[2] border-[1px] border-solid border-seconday-grey-e9e9e9'>
+              <button className='self-stretch rounded-8xs flex flex-row items-start justify-center py-[0.69rem] pr-[1.25rem] pl-[1.56rem] gap-[0.94rem] whitespace-nowrap z-[2] border-[1px] border-solid border-secondary-gray'>
                 <img
                   className='h-[1.5rem] w-[1.5rem] relative object-cover min-h-[1.5rem]'
                   alt=''
@@ -74,29 +80,31 @@ const Home = () => {
                 <div className='relative text-[1rem] font-medium font-kanit text-gray text-center'>
                   เข้าสู่ระบบผ่าน Google
                 </div>
-              </div>
-              <div className='self-stretch rounded-8xs flex flex-row items-center justify-center py-[0.69rem] pr-[1.25rem] pl-[1.5rem] gap-[0.88rem] whitespace-nowrap z-[2] border-[1px] border-solid border-seconday-grey-e9e9e9'>
+              </button>
+              <div className='self-stretch rounded-8xs flex flex-row items-center justify-center py-[0.69rem] pr-[1.25rem] pl-[1.5rem] gap-[0.88rem] whitespace-nowrap z-[2] border-[1px] border-solid border-secondary-gray'>
                 <img
                   className='h-[1.25rem] w-[1.25rem] relative object-cover'
                   alt=''
                   src='/images/icons/fb-login.png'
                 />
-                <div className='relative text-[1rem] font-medium font-kanit text-gray text-center'>
+                <button className='relative text-[1rem] font-medium font-kanit text-gray text-center'>
                   เข้าสู่ระบบผ่าน Facebook
-                </div>
+                </button>
               </div>
             </div>
             <div className='flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.31rem]'>
               <div className='relative text-[1rem] font-kanit text-left z-[2]'>
                 <span className='text-black'>{`คุณยังไม่ได้เป็นสมาชิกใช่ไหม? `}</span>
-                <span className='text-primary-green'>สมัครสมาชิก</span>
+                <span className='text-primary-green hover:underline hover:cursor-pointer'>
+                     สมัครสมาชิก
+                    </span>
               </div>
             </div>
           </div>
         </Form>
       </div>
       <img
-        className='h-[38.75rem] flex-1 relative rounded-tl-none rounded-tr-11xl rounded-br-11xl rounded-bl-none max-w-full overflow-hidden object-cover min-w-[22.56rem] z-[1] mq750:min-w-full'
+        className='hidden sm:block h-[50.75rem] flex-1 relative rounded-tl-none rounded-tr-11xl rounded-br-11xl rounded-bl-none max-w-full overflow-hidden object-cover min-w-[22.56rem] z-[1] '
         loading='eager'
         alt=''
         src='/images/login/imageLogin.png'

@@ -5,10 +5,18 @@
 @tailwind utilities;
 
 body {
-    @apply leading-[normal] m-0;
-  }
-  *,
-  ::before,
-  ::after {
-    border-width: 0;
-  }
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+.checkbox-parkX .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #4caf50 !important; /* Green background */
+  border-color: #4caf50 !important; /* Green border */
+  border-radius: 2px; /* Assuming '8xs' means a very small radius; adjust as needed */
+  box-sizing: border-box;
+  border: 1px solid #4caf50;
+}
