@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Button, Flex, Input, Typography } from 'antd'
 import OurLocation from '@/components/OurLocation'
+import LocaleSwitcher from '@/components/navbar/components/LocaleSwitcher'
 const { Title, Text } = Typography
 
 const images = ['/images/main.png', '/images/main.png', '/images/main.png']

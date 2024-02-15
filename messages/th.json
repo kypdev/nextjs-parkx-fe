@@ -1,7 +1,4 @@
 {
-  "Index": {
-    "title": "ดีจ้า!"
-  },
   "menu": {
     "about": "เกี่ยวกับ PARK X",
     "parking_solution": "โซลูชั่น PARKING",
@@ -9,5 +6,9 @@
     "contact_us": "ติดต่อ",
     "signin": "เข้าสู่ระบบ",
     "signup": "สมัครสมาชิก"
+  },
+  "LocaleSwitcher": {
+    "label": "เปลี่ยนภาษา",
+    "locale": "{locale, select, th {th} en {en} other {Unknown}}"
   }
 }

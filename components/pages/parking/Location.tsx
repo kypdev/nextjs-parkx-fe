@@ -33,7 +33,7 @@ const Location = () => {
           <Carousel useKeyboardArrows={true} showThumbs={false}>
             {locations.map((URL, index) => (
               <div key={index} className='slide'>
-                {/* <img alt='sample_file' src={URL} key={index} /> */}
+                <img alt='sample_file' src={URL} key={index} />
               </div>
             ))}
           </Carousel>

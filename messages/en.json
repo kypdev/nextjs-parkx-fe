@@ -1,7 +1,4 @@
 {
-  "Index": {
-    "title": "Hello world!"
-  },
   "menu": {
     "about": "ABOUT PARK X",
     "parking_solution": "PARKING SOLUTIONS",
@@ -9,5 +6,9 @@
     "contact_us": "CONTACT US",
     "signin": "Signin",
     "signup": "Signup"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, th {th} en {en} other {Unknown}}"
   }
 }
