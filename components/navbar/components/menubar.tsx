@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import LocaleSwitcher from './LocaleSwitcher'
 
 const Menubar = () => {
   const t = useTranslations('menu')

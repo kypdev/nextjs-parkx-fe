@@ -12,6 +12,6 @@
   },
   "LocaleSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, th {ไทย} en {อังกฤษ} other {Unknown}}"
+    "locale": "{locale, select, th {th} en {en} other {Unknown}}"
   }
 }
