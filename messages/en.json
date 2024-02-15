@@ -9,5 +9,9 @@
     "contact_us": "CONTACT US",
     "signin": "Signin",
     "signup": "Signup"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, th {TH} en {EN} other {Unknown}}"
   }
 }

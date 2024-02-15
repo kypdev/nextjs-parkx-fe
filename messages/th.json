@@ -9,5 +9,9 @@
     "contact_us": "ติดต่อ",
     "signin": "เข้าสู่ระบบ",
     "signup": "สมัครสมาชิก"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, th {ไทย} en {อังกฤษ} other {Unknown}}"
   }
 }

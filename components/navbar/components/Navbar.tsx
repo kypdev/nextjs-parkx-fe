@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import LocaleSwitcher from './LocaleSwitcher'
 
 const imagesPath = {
   email: '/images/icons/email.png',
@@ -79,12 +80,13 @@ const NavbarComponent = () => {
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             className='h-[1.5rem] w-[2.25rem] relative overflow-hidden shrink-0 object-cover z-[1]'
             loading='eager'
             alt=''
             src='/images/icons/engl_flag.png'
-          />
+          /> */}
+          <LocaleSwitcher />
         </div>
       </div>
     </div>
