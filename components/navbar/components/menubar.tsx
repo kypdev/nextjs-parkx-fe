@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
-import LocaleSwitcher from './LocaleSwitcher'
 
 const Menubar = () => {
   const t = useTranslations('menu')
   return (
-    <header className='w- flex flex-row items-start justify-start py-[0rem] pr-[2.38rem] pl-[1.25rem] box-border max-w-full text-left text-[1.25rem] text-darkslategray-200 font-kanit'>
+    <header className=' flex flex-row items-start justify-start py-[0rem]  box-border max-w-full text-left text-[1.25rem] text-darkslategray-200 font-kanit'>
+      {/* <div className='flex justify-between'> */}
       <div className='flex-1 flex flex-row items-center justify-start gap-[2rem] max-w-full mq750:gap-[1rem]'>
         <Link href={'/'}>
           <Image
@@ -36,15 +36,10 @@ const Menubar = () => {
             {t('contact_us')}
           </div>
         </div>
-        <div className='flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.38rem]'>
-          <div className='h-[1.88rem] relative font-semibold inline-block whitespace-nowrap'>
-            {/* <Button shape="circle" className='bg-[#1da1f2]'>Signin | Signup</Button> */}
-          </div>
-        </div>
       </div>
 
-      <div className='flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.38rem] text-[0.81rem] text-white mt-4'>
-        <div className='rounded-xl bg-primary-blue flex flex-row items-end justify-start pt-[0.69rem] pb-[0.63rem] pr-[0.44rem] pl-[1.25rem] gap-[0.81rem]'>
+      <div className='flex flex-col items-start justify-start pt-[0rem] pl-[3rem] pb-[0.38rem] text-[0.81rem] text-white mt-4'>
+        <div className='rounded-xl bg-primary-blue flex flex-row items-end justify-start pt-[0.69rem] pb-[0.63rem] pr-[1.25rem] pl-[1.25rem] gap-[0.81rem]'>
           <div className='relative font-medium z-[1] hover:underline'>
             <Link href='/register'>{t('signin')}</Link>{' '}
           </div>
@@ -55,6 +50,7 @@ const Menubar = () => {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </header>
   )
 }
