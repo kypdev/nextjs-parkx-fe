@@ -2,7 +2,7 @@
 'use client'
 import { Input, Form, Button } from 'antd'
 
-const login = () => {
+const Home = () => {
   return (
     <div className=' rounded-11xl bg-white shadow-[0px_4px_4px_rgba(174,_174,_174,_0.25)] box-border flex flex-row items-center justify-start py-[0rem] pr-[0.13rem] pl-[4.88rem] gap-[4.69rem]  border-[1px] border-solid border-seconday-grey-e9e9e9 '>
       <div className='w-[25rem] flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.56rem] box-border min-w-[25rem] max-w-full mq750:min-w-full mq1025:flex-1'>
@@ -105,4 +105,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Home

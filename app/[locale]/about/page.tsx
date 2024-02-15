@@ -14,7 +14,7 @@ const itemBreadcrumb = [
   },
 ]
 
-const page = () => {
+const Home = () => {
   return (
     <>
       <Space className='w-full px-80' direction='horizontal' align='start'>
@@ -99,4 +99,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Home

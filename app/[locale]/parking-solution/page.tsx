@@ -22,7 +22,7 @@ const bannerList = [
   { id: 3, url: '/images/parking/banner3.png' },
 ]
 
-const page = () => {
+const Home = () => {
   return (
     <>
       <Space className='w-full px-80' direction='horizontal' align='start'>
@@ -46,4 +46,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Home

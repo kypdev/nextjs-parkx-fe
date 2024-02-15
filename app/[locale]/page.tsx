@@ -1,7 +1,5 @@
 'use client'
-import { Trans } from 'react-i18next/TransWithoutContext'
-// import { languages, fallbackLng } from '../i18n/settings'
-// import { useTranslation } from '../i18n'
+
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Button, Flex, Input, Typography } from 'antd'
@@ -10,9 +8,7 @@ const { Title, Text } = Typography
 
 const images = ['/images/main.png', '/images/main.png', '/images/main.png']
 
-export default function Home({ params: { lng } }: { params: { lng: string } }) {
-  // if (languages.indexOf(lng) < 0) lng = fallbackLng
-  // const { t } = await useTranslation(lng)
+export default function Home() {
 
   return (
     <>

@@ -1,11 +1,9 @@
 import type { Metadata } from 'next'
 import { Kanit } from 'next/font/google'
 import './globals.css'
-
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
-import { dir } from 'i18next'
-// import { languages } from '../i18n/settings'
+import { NextIntlClientProvider, useMessages } from 'next-intl'
 
 const kanit = Kanit({
   subsets: ['latin', 'latin-ext', 'thai'],
@@ -19,20 +17,18 @@ export const metadata: Metadata = {
     'ParkX  - บริการจอดรถอัจฉริยะ ที่ช่วยให้คุณจอดรถได้ง่ายขึ้น และช่วยให้คุณประหยัดเงินได้มากขึ้น ด้วยการจอดรถแบบอัจฉริยะ ที่คุณสามารถจอดรถได้ทุกที่ ทุกเวลา และไม่ต้องเสียเวลาในการหาที่จอดรถอีกต่อไป',
 }
 
-export async function generateStaticParams() {
-  // return languages.map((lng) => ({ lng }))
-}
 
 export default function RootLayout({
   children,
-  params: { lng },
+  params: { locale },
 }: {
   children: React.ReactNode
-  params: { lng: string }
+  params: { locale: string }
 }) {
+  const messages = useMessages()
   return (
     <>
-      <html lang={lng}>
+      <html lang={locale}>
         <body className={kanit.className}>
           <div className='w-full relative bg-seconday-white-ffffff overflow-hidden flex flex-col items-center justify-start gap-[2.56rem] tracking-[normal] text-left text-[0.63rem] text-seconday-white-ffffff font-p6-prompt-reg-12 mq450:gap-[1.25rem]'>
             <div className='w-[13.13rem] h-[1.25rem] relative bg-firebrick hidden' />

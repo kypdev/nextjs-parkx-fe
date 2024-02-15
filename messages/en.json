@@ -1,0 +1,13 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "menu": {
+    "about": "ABOUT PARK X",
+    "parking_solution": "PARKING SOLUTIONS",
+    "news_promotion": "NEWS & PROMOTIONS",
+    "contact_us": "CONTACT US",
+    "signin": "Signin",
+    "signup": "Signup"
+  }
+}
