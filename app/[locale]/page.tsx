@@ -9,7 +9,7 @@ const { Title, Text } = Typography
 
 const images = ['/images/main.png', '/images/main.png', '/images/main.png']
 
-export default function Home() {
+export default function Page() {
 
   return (
     <>

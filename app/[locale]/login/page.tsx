@@ -3,10 +3,10 @@
 import { Input, Form, Button } from 'antd'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
-const Home = () => {
+const Page = () => {
   const t = useTranslations('login')
   return (
-    <div className=' rounded-11xl bg-white shadow-[0px_4px_4px_rgba(174,_174,_174,_0.25)] box-border flex flex-row items-center justify-start 
+    <div className=' rounded-11xl bg-white shadow-[0px_4px_4px_rgba(174,_174,_174,_0.25)] box-border flex flex-row items-center justify-start
     py-3 pl-6 lg:py-[0rem] pr-[0.13rem] lg:pl-[4.88rem] gap-[4.69rem]  border-[1px] border-solid border-secondary-gray '>
       <div className='w-[25rem] flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.56rem] box-border min-w-[25rem] max-w-full'>
         <Form className='m-0 self-stretch flex flex-col items-start justify-start'>
@@ -129,4 +129,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Page
