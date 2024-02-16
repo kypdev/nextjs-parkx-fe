@@ -3,6 +3,7 @@
 import { Input, Form, Button } from 'antd'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+
 const Page = () => {
   const t = useTranslations('login')
   return (
