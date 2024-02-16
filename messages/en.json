@@ -10,5 +10,43 @@
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, th {th} en {en} other {Unknown}}"
+  },
+  "login":{
+    "title": "Signin",
+    "email": "Email",
+    "please_enter_email": "Please enter email",
+    "password": "Password",
+    "please_enter_password": "Please enter password",
+    "forgot_password": "Forgot password?",
+    "signin": "Signin",
+    "or": "or",
+    "Signin_with_facebook": "Signin with Facebook",
+    "Signin_with_google": "Signin with Google",
+    "Question_register": "You are not a member yet?",
+    "signup": "Signup"
+
+  },
+  "register":{
+    "title": "Signup",
+    "email": "Email",
+    "name_lastname": "Name-Lastname",
+    "please_name_lastname": "Please enter name-lastname",
+    "please_enter_email": "Please enter email",
+    "password": "Password",
+    "please_enter_password": "Please enter password",
+    "confirm_password": "Confirm Password",
+    "please_enter_confirm_password": "Please enter confirm password",
+    "signup": "Signup",
+    "or": "or",
+    "Signin_with_facebook": "Signin with Facebook",
+    "Signin_with_google": "Signin with Google",
+    "Question_register": "You are not a member yet?",
+    "signin": "Signin",
+    "agree": "I agree to the",
+    "termsOfUse": "Terms of use",
+    "companyPolicy": "Company policyy",
+    "agreeNews": "I agree to receive news and promotions from Park X",
+    "already_member": "Already have an account?"
+
   }
 }

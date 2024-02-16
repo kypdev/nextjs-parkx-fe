@@ -10,5 +10,42 @@
   "LocaleSwitcher": {
     "label": "เปลี่ยนภาษา",
     "locale": "{locale, select, th {th} en {en} other {Unknown}}"
+  },
+  "login":{
+    "title": "ล็อกอินเข้าสู่ระบบ",
+    "email": "อีเมล",
+    "please_enter_email": "กรุณากรอกอีเมล",
+    "please_enter_password": "กรุณากรอกรหัสผ่าน",
+    "password": "รหัสผ่าน",
+    "forgot_password": "ลืมรหัสผ่าน",
+    "signin":"เข้าสู่ระบบ",
+    "or":"หรือ",
+    "Signin_with_facebook":"เข้าสู่ระบบด้วย Facebook",
+    "Signin_with_google":"เข้าสู่ระบบด้วย Google",
+    "Question_register":"คุณยังไม่ได้เป็นสมาชิกใช่ไหม?",
+    "signup":"สมัครสมาชิก"
+  },
+  "register":{
+    "title": "สมัครสมาชิก",
+    "email": "อีเมล",
+    "name_lastname": "ชื่อ-นามสกุล",
+    "please_name_lastname": "กรุณากรอกชื่อ-นามสกุล",
+    "please_enter_email": "กรุณากรอกอีเมล",
+    "password": "รหัสผ่าน",
+    "please_enter_password": "กรุณากรอกรหัสผ่าน",
+    "confirm_password": "ยืนยันรหัสผ่าน",
+    "please_enter_confirm_password": "กรุณากรอกยืนยันรหัสผ่าน",
+    "signup": "สมัครสมาชิก",
+    "or": "หรือ",
+    "Signin_with_facebook": "เข้าสู่ระบบด้วย Facebook",
+    "Signin_with_google": "เข้าสู่ระบบด้วย Google",
+    "Question_register": "มีบัญชีแล้ว?",
+    "signin": "เข้าสู่ระบบ",
+    "agree": "ข้าพเจ้ายอมรับ",
+    "termsOfUse": "ข้อกำหนดการใช้งาน",
+    "companyPolicy": "นโยบายของบริษัท",
+    "agreeNews": "ต้องการรับข่าวสารและโปรโมชันจาก ParkX",
+    "already_member": "คุณเป็นสมาชิกแล้ว?"
+
   }
 }

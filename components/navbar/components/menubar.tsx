@@ -46,7 +46,7 @@ const Menubar = () => {
           |
           <div className='relative font-medium z-[1] hover:underline'>
             {' '}
-            <Link href={'/register'}>{t('signup')}</Link>{' '}
+            <Link href={'/signup'}>{t('signup')}</Link>{' '}
           </div>
         </div>
       </div>

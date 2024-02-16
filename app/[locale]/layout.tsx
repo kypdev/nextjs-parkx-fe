@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
+import CookieConsent from '@/components/CookieConsent'
 
 const kanit = Kanit({
   subsets: ['latin', 'latin-ext', 'thai'],
@@ -39,6 +40,7 @@ export default function RootLayout({
               </section>
               <Footer />
             </div>
+            <CookieConsent/>
           </NextIntlClientProvider>
         </body>
       </html>
