@@ -9,12 +9,17 @@ const Menubar = () => {
       {/* <div className='flex justify-between'> */}
       <div className='flex-1 flex flex-row items-center justify-start gap-[2rem] max-w-full mq750:gap-[1rem]'>
         <Link href={'/'}>
-          <Image
-            src={'/images/parkx-logo.png'}
-            alt={''}
-            width={240}
-            height={72}
-          />
+          <div className='relative'>
+            <Image
+              src={'/images/parkx-logo.png'}
+              alt={'empty'}
+              width={240}
+              height={72}
+              // loading='eager'
+              // priority={true}
+              style={{width:'120px', height: "auto" }}
+            />
+          </div>
         </Link>
         <div className='flex-1 flex flex-col items-start justify-start pt-[0rem] pb-[0.38rem] pr-[2.5rem] pl-[0rem] box-border max-w-full md:w-full '>
           <div className='self-stretch flex flex-row items-start justify-start gap-[4.13rem] mq450:gap-[1rem] mq750:gap-[2.06rem] mq1050:hidden'>

@@ -30,6 +30,7 @@ const OurLocation = () => {
               // }}
               width={219}
               height={65}
+              className='w-auto h-auto'
             />
             <div className='flex justify-center text-center bg-primary-green px-16 my-3 ml-4 text-white'>
               <p className='flex items-center	text-lg'>อุดมสุข</p>
@@ -49,6 +50,7 @@ const OurLocation = () => {
               alt='Picture of the author'
               width={554}
               height={420}
+              className='w-auto h-auto'
             />
           </div>
           <ChevronLeft onClick={onClickLeft} className='absolute top-48' />
