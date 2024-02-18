@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import AuthForm from "@/components/auth/auth-form"
-const register = () => {
+const Page = () => {
 
     const t = useTranslations('formAuth');
     return (
@@ -17,4 +17,4 @@ const register = () => {
     )
 }
 
-export default register
+export default Page

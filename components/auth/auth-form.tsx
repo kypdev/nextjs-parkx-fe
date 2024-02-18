@@ -13,7 +13,7 @@ interface AuthFormProps {
 
 }
 
-const authForm = ({
+const AuthForm = ({
     omSunbumit,
     register,
     title,
@@ -326,4 +326,4 @@ const authForm = ({
 
         </div>)
 }
-export default authForm;
+export default AuthForm;
