@@ -46,6 +46,9 @@
     "companyPolicy": "นโยบายของบริษัท",
     "agreeNews": "ต้องการรับข่าวสารและโปรโมชันจาก ParkX",
     "already_member": "คุณเป็นสมาชิกแล้ว?"
-
+  },
+  "breadcrumb": {
+    "home": "หน้าแรก",
+    "parking_lot": "ที่จอดรถ"
   }
 }

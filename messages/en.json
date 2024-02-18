@@ -11,7 +11,7 @@
     "label": "Change language",
     "locale": "{locale, select, th {th} en {en} other {Unknown}}"
   },
-  "login":{
+  "login": {
     "title": "Signin",
     "email": "Email",
     "please_enter_email": "Please enter email",
@@ -24,9 +24,8 @@
     "Signin_with_google": "Signin with Google",
     "Question_register": "You are not a member yet?",
     "signup": "Signup"
-
   },
-  "register":{
+  "register": {
     "title": "Signup",
     "email": "Email",
     "name_lastname": "Name-Lastname",
@@ -47,6 +46,9 @@
     "companyPolicy": "Company policyy",
     "agreeNews": "I agree to receive news and promotions from Park X",
     "already_member": "Already have an account?"
-
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "parking_lot": "Parking LOTS"
   }
 }
