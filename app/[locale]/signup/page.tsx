@@ -17,4 +17,4 @@ const register = () => {
     )
 }
 
-export default Page
+export default register
