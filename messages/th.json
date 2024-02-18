@@ -25,12 +25,16 @@
     "Question_register":"คุณยังไม่ได้เป็นสมาชิกใช่ไหม?",
     "signup":"สมัครสมาชิก"
   },
-  "register":{
+  "formAuth":{
+    "register": "สมัครสมาชิก",
+    "title_signin":"ล็อกอินเข้าสู่ระบบ",
     "title": "สมัครสมาชิก",
     "email": "อีเมล",
     "name_lastname": "ชื่อ-นามสกุล",
     "please_name_lastname": "กรุณากรอกชื่อ-นามสกุล",
     "please_enter_email": "กรุณากรอกอีเมล",
+    "telephone_number": "เบอร์โทรศัพท์",
+    "please_enter_telephone": "กรุณากรอกเบอร์โทรศัพท์",
     "password": "รหัสผ่าน",
     "please_enter_password": "กรุณากรอกรหัสผ่าน",
     "confirm_password": "ยืนยันรหัสผ่าน",
@@ -39,13 +43,16 @@
     "or": "หรือ",
     "Signin_with_facebook": "เข้าสู่ระบบด้วย Facebook",
     "Signin_with_google": "เข้าสู่ระบบด้วย Google",
+    "Signin_with_line": "เข้าสู่ระบบด้วย Line",
     "Question_register": "มีบัญชีแล้ว?",
     "signin": "เข้าสู่ระบบ",
     "agree": "ข้าพเจ้ายอมรับ",
+    "forgot_password": "ลืมรหัสผ่าน",
     "termsOfUse": "ข้อกำหนดการใช้งาน",
     "companyPolicy": "นโยบายของบริษัท",
     "agreeNews": "ต้องการรับข่าวสารและโปรโมชันจาก ParkX",
-    "already_member": "คุณเป็นสมาชิกแล้ว?"
+    "already_member": "คุณเป็นสมาชิกแล้ว?",
+    "password_not_match": "รหัสผ่านใหม่ที่คุณป้อนไม่ตรงกัน!"
 
   }
 }

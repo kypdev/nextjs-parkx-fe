@@ -26,12 +26,16 @@
     "signup": "Signup"
 
   },
-  "register":{
+  "formAuth":{
+    "register": "Register",
+    "title_signin": "Login into the system",
     "title": "Signup",
     "email": "Email",
     "name_lastname": "Name-Lastname",
     "please_name_lastname": "Please enter name-lastname",
     "please_enter_email": "Please enter email",
+    "telephone_number": "Telephone number",
+    "please_enter_telephone": "Please enter telephone number",
     "password": "Password",
     "please_enter_password": "Please enter password",
     "confirm_password": "Confirm Password",
@@ -40,13 +44,16 @@
     "or": "or",
     "Signin_with_facebook": "Signin with Facebook",
     "Signin_with_google": "Signin with Google",
+    "Signin_with_line": "Signin with Line",
     "Question_register": "You are not a member yet?",
     "signin": "Signin",
     "agree": "I agree to the",
     "termsOfUse": "Terms of use",
     "companyPolicy": "Company policyy",
+    "forgot_password": "Forgot password?",
     "agreeNews": "I agree to receive news and promotions from Park X",
-    "already_member": "Already have an account?"
+    "already_member": "Already have an account?",
+    "password_not_match":"The new password that you entered do not match! "
 
   }
 }
