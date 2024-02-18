@@ -41,7 +41,7 @@ const AuthForm = ({
                                     width: '100%',
 
                                 }}
-                                name='fullname'
+                                name='name'
                                 rules={[
                                     {
                                         required: true,
@@ -91,7 +91,7 @@ const AuthForm = ({
                                 width: '100%',
 
                             }}
-                            name='tel'
+                            name='mobile'
                             rules={[
                                 {
                                     required: true,

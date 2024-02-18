@@ -1,9 +1,8 @@
+                                    
 'use client'
-
 import { useTranslations } from 'next-intl'
 import AuthForm from "@/components/auth/auth-form"
-
-const Page = () => {
+const Login = () => {
   const t = useTranslations('formAuth');
     return (
         <AuthForm
@@ -17,4 +16,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default Login
