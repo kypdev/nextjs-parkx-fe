@@ -1,20 +1,21 @@
-'use client'
+'use client';
 
-import { useTranslations } from 'next-intl'
-import AuthForm from "@/components/auth/auth-form"
-const register = () => {
+import { useTranslations } from 'next-intl';
+import AuthForm from '@/components/auth/auth-form';
+import AuthAction from '@/actions/Auth';
+const Register = () => {
+  const t = useTranslations('formAuth');
+  const { registerSubmit } = AuthAction();
+  return (
+    <AuthForm
+      title={t('register')}
+      omSunbumit={(data: any) => {
+        registerSubmit(data);
+      }}
+      register={true}
+      btnTextAuth={t('register')}
+    />
+  );
+};
 
-    const t = useTranslations('formAuth');
-    return (
-        <AuthForm
-           title={t('register')}
-            omSunbumit={(data:any)=>{
-                console.log(data);
-            }}
-            register={true}
-            btnTextAuth={t('register')}
-        />
-    )
-}
-
-export default register
+export default Register;

@@ -1,9 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
+                                    
 'use client'
-
 import { useTranslations } from 'next-intl'
 import AuthForm from "@/components/auth/auth-form"
-const login = () => {
+const Login = () => {
   const t = useTranslations('formAuth');
     return (
         <AuthForm
@@ -17,4 +16,4 @@ const login = () => {
     )
 }
 
-export default login
+export default Login

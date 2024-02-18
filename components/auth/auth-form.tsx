@@ -13,7 +13,7 @@ interface AuthFormProps {
 
 }
 
-const authForm = ({
+const AuthForm = ({
     omSunbumit,
     register,
     title,
@@ -41,7 +41,7 @@ const authForm = ({
                                     width: '100%',
 
                                 }}
-                                name='fullname'
+                                name='name'
                                 rules={[
                                     {
                                         required: true,
@@ -91,7 +91,7 @@ const authForm = ({
                                 width: '100%',
 
                             }}
-                            name='tel'
+                            name='mobile'
                             rules={[
                                 {
                                     required: true,
@@ -326,4 +326,4 @@ const authForm = ({
 
         </div>)
 }
-export default authForm;
+export default AuthForm;
