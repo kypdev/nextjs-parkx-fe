@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import { SignIn } from '@/components/auth-components'
 
 const Menubar = () => {
   const t = useTranslations('menu')
@@ -53,6 +54,7 @@ const Menubar = () => {
             {' '}
             <Link href={'/signup'}>{t('signup')}</Link>{' '}
           </div>
+         
         </div>
       </div>
       {/* </div> */}
