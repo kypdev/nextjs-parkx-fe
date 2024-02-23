@@ -13,7 +13,8 @@ const config: Config = {
         'primary-green': '#7FBC00',
         'secondary-blue': '#343434',
         'secondary-gray': '#E9E9E9',
-        'disable': '#A5A5A5'
+        'disable': '#A5A5A5',
+        'danger': '#FF0000'
       },
       fontFamily: {
         kanit: "Kanit",
