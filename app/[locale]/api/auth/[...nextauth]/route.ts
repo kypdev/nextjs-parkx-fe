@@ -28,7 +28,25 @@ const hahdler = NextAuth({
       clientSecret: process.env.AUTH_LINE_SECRET as string,
     }),
   ],
+
   secret: process.env.AUTH_SECRET,
+  callbacks: {
+    async redirect({ url, baseUrl }) {
+      console.log('url', url);
+      // Allows relative callback URLs
+      if (url.startsWith('/')) return `${baseUrl}${url}`;
+      // Allows callback URLs on the same origin
+      else if (new URL(url).origin === baseUrl) return url;
+      return baseUrl;
+    },
+    async session({ session, token, user }) {
+      // Send properties to the client, like an access_token from a provider.
+      //session.accessToken = token.accessToken
+      console.log('session xxx', session);
+      return session;
+    },
+  },
+
   pages: {
     signIn: '/login',
     signOut: '/',

@@ -79,30 +79,7 @@ const AuthForm = ({
               />
             </Form.Item>
           </div>
-          {register === true && (
-            <div className="self-stretch flex flex-col items-start justify-start gap-[0.63rem]">
-              <div className="w-[9.56rem] relative text-[1rem] font-kanit text-black text-left inline-block z-[2]">
-                {t('telephone_number')}
-              </div>
-              <Form.Item
-                style={{
-                  width: '100%',
-                }}
-                name="mobile"
-                rules={[
-                  {
-                    required: true,
-                    message: t('please_enter_telephone'),
-                  },
-                ]}
-              >
-                <Input
-                  placeholder={t('telephone_number')}
-                  className=" w-11/12 lg:w-full  self-stretch rounded-8xs flex flex-row items-center justify-start py-[0.69rem] px-[0.94rem] z-[2] border-[1px] border-solid border-primary-green placeholder:font-kanit "
-                />
-              </Form.Item>
-            </div>
-          )}
+          
 
           <div className="self-stretch flex flex-col items-start justify-start gap-[0.63rem]">
             <div className="m-0 h-[1.69rem] relative text-[1.13rem] font-normal font-kanit text-black text-left inline-block z-[2]">

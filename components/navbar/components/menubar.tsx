@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
@@ -47,14 +47,6 @@ const Menubar = () => {
 
       <div className="flex flex-col items-start justify-start pt-[0rem] pl-[3rem] pb-[0.38rem] text-[0.81rem] text-white mt-4">
         <div className="rounded-xl bg-primary-blue flex flex-row items-end justify-start pt-[0.69rem] pb-[0.63rem] pr-[1.25rem] pl-[1.25rem] gap-[0.81rem]">
-          <div className="relative font-medium z-[1] hover:underline">
-            <Link href={'/login'}>{t('signin')}</Link>{' '}
-          </div>
-          |
-          <div className="relative font-medium z-[1] hover:underline">
-            {' '}
-            <Link href={'/signup'}>{t('signup')}</Link>{' '}
-          </div>
           <button
             className="relative font-medium z-[1] hover:underline"
             onClick={() => signIn()}
@@ -62,6 +54,11 @@ const Menubar = () => {
             {' '}
             {t('signin')}{' '}
           </button>
+          |
+          <div className="relative font-medium z-[1] hover:underline">
+            {' '}
+            <Link href={'/signup'}>{t('signup')}</Link>{' '}
+          </div>
         </div>
       </div>
       {/* </div> */}
