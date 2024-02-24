@@ -52,7 +52,7 @@ const Menubar = () => {
             onClick={() => signIn()}
           >
             {' '}
-            {t('signin')}{' '}
+            {t('signin')}{' '} X
           </button>
           |
           <div className="relative font-medium z-[1] hover:underline">
