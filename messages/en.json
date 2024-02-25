@@ -55,5 +55,10 @@
     "already_member": "Already have an account?",
     "password_not_match":"The new password that you entered do not match! "
 
+  },
+  "alert":{
+    "please_conferm_terms_of_use": "Please confirm the terms of use",
+    "please_conferm_company_policy": "Please confirm the company policy"
   }
+
 }

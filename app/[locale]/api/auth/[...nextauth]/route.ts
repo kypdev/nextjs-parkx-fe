@@ -1,7 +1,9 @@
 import NextAuth from 'next-auth/next';
 import CredentialsProviders from 'next-auth/providers/credentials';
 import LineProvisers from 'next-auth/providers/line';
+import ParkXAuth from '@/actions/Auth';
 
+const { login    } = ParkXAuth();
 const hahdler = NextAuth({
   providers: [
     CredentialsProviders({
@@ -40,9 +42,6 @@ const hahdler = NextAuth({
       return baseUrl;
     },
     async session({ session, token, user }) {
-      // Send properties to the client, like an access_token from a provider.
-      //session.accessToken = token.accessToken
-      console.log('session xxx', session);
       return session;
     },
   },

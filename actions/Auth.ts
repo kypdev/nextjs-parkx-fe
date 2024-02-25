@@ -17,7 +17,7 @@ const AuthAction = () => {
   //     "password": "2222", //optional
   //     "register": true
   // }
-  const registerSubmit = async (data: any) => {
+  const registerSubmit = async (data: any ) => {
     var authModel: AuthModel = {
       email: data.email,
       name: data.name,
@@ -25,7 +25,21 @@ const AuthAction = () => {
       password: data.password,
       register: true,
     };
+
     var json = JSON.stringify(authModel);
+   return await httpClient
+      .post('/auth/ValidateMember', json)
+  };
+
+  const login = async (data: any) => {
+    var authModel: AuthModel = {
+      email: data.email,
+      name: '',
+      mobile: '',
+      password: data.password,
+      register: false,
+    };
+
     await httpClient
       .post('/auth/ValidateMember', authModel)
       .then((res) => {
@@ -43,6 +57,7 @@ const AuthAction = () => {
   };
 
   return {
+    login,
     registerSubmit,
   };
 };
