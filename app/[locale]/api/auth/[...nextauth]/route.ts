@@ -3,7 +3,7 @@ import CredentialsProviders from 'next-auth/providers/credentials';
 import LineProvisers from 'next-auth/providers/line';
 import ParkXAuth from '@/actions/Auth';
 
-const { login    } = ParkXAuth();
+const { login } = ParkXAuth();
 const hahdler = NextAuth({
   providers: [
     CredentialsProviders({
@@ -13,15 +13,16 @@ const hahdler = NextAuth({
         password: { label: 'Password', type: 'password' },
       },
       async authorize(credentials, req) {
-        const res = await fetch('https://www.melivecode.com/api/login', {
-          method: 'POST',
-          body: JSON.stringify(credentials),
-          headers: { 'Content-Type': 'application/json' },
-        });
-        const respose = await res.json();
-        if (respose.status === 'ok') {
-          return respose.user;
-        }
+        console.log('credentials', credentials);
+        // const res = await fetch('https://www.melivecode.com/api/login', {
+        //   method: 'POST',
+        //   body: JSON.stringify(credentials),
+        //   headers: { 'Content-Type': 'application/json' },
+        // });
+        // const respose = await res.json();
+        // if (respose.status === 'ok') {
+        //   return respose.user;
+        // }
         return null;
       },
     }),

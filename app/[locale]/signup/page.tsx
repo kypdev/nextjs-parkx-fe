@@ -41,12 +41,14 @@ const Register = () => {
           setLoading(true);
           registerSubmit(data)
             .then((res) => {
-              setLoading(false);
+              
               signIn('credentials', {
                 email: data.email,
                 password: data.password,
+                //redirect: false,
                 callbackUrl: '/',
               });
+              setLoading(false);
             })
             .catch((err) => {
               setLoading(false);
