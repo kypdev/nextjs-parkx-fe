@@ -17,7 +17,7 @@ const AuthAction = () => {
   //     "password": "2222", //optional
   //     "register": true
   // }
-  const registerSubmit = async (data: any ) => {
+  const registerSubmit = async (data: any) => {
     var authModel: AuthModel = {
       email: data.email,
       name: data.name,
@@ -27,38 +27,35 @@ const AuthAction = () => {
     };
 
     var json = JSON.stringify(authModel);
-   return await httpClient
-      .post('/auth/ValidateMember', json)
+    return await httpClient.post('/auth/ValidateMember', json);
+  };
+
+  const memberDetail = async (memberKey: string) => {
+    var authModel = {
+      memberKey: memberKey,
+    };
+    return await httpClient.post('/auth/ValidateMember', authModel);
   };
 
   const login = async (data: any) => {
-    var authModel: AuthModel = {
+    
+    var parameters = {
       email: data.email,
-      name: '',
-      mobile: '',
       password: data.password,
-      register: false,
     };
-
-    await httpClient
-      .post('/auth/ValidateMember', authModel)
-      .then((res) => {
-        console.log('res', res.data);
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => {
-        console.log('finally');
-      });
-
-    console.log(authModel);
+    return await httpClient.post('/auth/ValidateMember', parameters);
   };
 
+  const loginWithLine = async (memberKey: string) => {
+    
+
+    return await httpClient.get(`/auth/line/parkx/`);
+  }
   return {
     login,
     registerSubmit,
+    memberDetail,
+    loginWithLine
   };
 };
 

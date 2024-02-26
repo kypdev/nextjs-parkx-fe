@@ -23,7 +23,7 @@ const AuthForm = ({
   const t = useTranslations('formAuth');
   return (
     <Spin spinning={isLoading}>
-      <div className="rounded-11xl w-3/4 bg-white shadow-[0px_4px_4px_rgba(174,_174,_174,_0.25)] box-border flex flex-row items-stretch justify-start py-3 pl-6 lg:py-[0rem] pr-[0.13rem] lg:pl-[4.88rem] gap-[4.69rem] border-[1px] border-solid border-secondary-gray ">
+      <div className="rounded-11xl w-full bg-white shadow-[0px_4px_4px_rgba(174,_174,_174,_0.25)] box-border flex flex-row items-stretch justify-start py-3 pl-6 lg:py-[0rem] pr-[0.13rem] lg:pl-[4.88rem] gap-[4.69rem] border-[1px] border-solid border-secondary-gray ">
         <div className=" flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.56rem] box-border w-full lg:w-1/2 md:w-1/2  max-w-full">
           <Form
             onFinish={(e) => {
@@ -260,7 +260,7 @@ const AuthForm = ({
                 <button
                   type="button"
                   onClick={() => {
-                    signIn('line');
+                    signIn('line', { callbackUrl: '/package' });
                   }}
                   className="self-stretch rounded-8xs flex flex-row items-center justify-center py-[0.69rem] pr-[1.25rem] pl-[1.5rem] gap-[0.88rem] whitespace-nowrap z-[2] border-[1px] border-solid border-secondary-gray"
                 >

@@ -2,12 +2,14 @@
 
 import { useTranslations } from 'next-intl';
 import AuthForm from '@/components/auth/auth-form';
-import { signIn } from 'next-auth/react';
+import { RedirectType, redirect } from 'next/navigation';
 import AuthAction from '@/actions/Auth';
 import toast from 'react-hot-toast';
 import useLoadingModal from '@/hooks/useLoadingModal';
 import useMessagesModel from '@/hooks/useMessagesModel';
 import { RegisterModel } from '@/dto/authModel/RegisterModel';
+import { useRouter } from 'next/navigation';
+
 
 const Register = () => {
   const t = useTranslations('formAuth');
@@ -15,13 +17,13 @@ const Register = () => {
   const { registerSubmit } = AuthAction();
   const { loading, setLoading } = useLoadingModal();
   const { setMessage, setShowModalMessage } = useMessagesModel();
+   const router = useRouter();
   return (
     <>
       <AuthForm
         isLoading={loading}
         title={t('register')}
         omSunbumit={(data: RegisterModel) => {
-          console.log(data);
           if (
             data.agreeCompanyPolicy === false ||
             data.agreeCompanyPolicy === undefined
@@ -41,18 +43,13 @@ const Register = () => {
           setLoading(true);
           registerSubmit(data)
             .then((res) => {
-              
-              signIn('credentials', {
-                email: data.email,
-                password: data.password,
-                //redirect: false,
-                callbackUrl: '/',
-              });
+              localStorage.setItem('memberKey', res.data.memberKey);
               setLoading(false);
+               router.push('/otp?memberKey=' + res.data.memberKey);
             })
             .catch((err) => {
               setLoading(false);
-              toast.error('error');
+              setMessage(alertText('error_register'));
             });
         }}
         register={true}
