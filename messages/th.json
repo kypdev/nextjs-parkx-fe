@@ -5,29 +5,30 @@
     "news_promotion": "ข่าวสาร & โปรโมชั่น",
     "contact_us": "ติดต่อ",
     "signin": "เข้าสู่ระบบ",
-    "signup": "สมัครสมาชิก"
+    "signup": "สมัครสมาชิก",
+    "signout": "ออกจากระบบ"
   },
   "LocaleSwitcher": {
     "label": "เปลี่ยนภาษา",
     "locale": "{locale, select, th {th} en {en} other {Unknown}}"
   },
-  "login":{
+  "login": {
     "title": "ล็อกอินเข้าสู่ระบบ",
     "email": "อีเมล",
     "please_enter_email": "กรุณากรอกอีเมล",
     "please_enter_password": "กรุณากรอกรหัสผ่าน",
     "password": "รหัสผ่าน",
     "forgot_password": "ลืมรหัสผ่าน",
-    "signin":"เข้าสู่ระบบ",
-    "or":"หรือ",
-    "Signin_with_facebook":"เข้าสู่ระบบด้วย Facebook",
-    "Signin_with_google":"เข้าสู่ระบบด้วย Google",
-    "Question_register":"คุณยังไม่ได้เป็นสมาชิกใช่ไหม?",
-    "signup":"สมัครสมาชิก"
+    "signin": "เข้าสู่ระบบ",
+    "or": "หรือ",
+    "Signin_with_facebook": "เข้าสู่ระบบด้วย Facebook",
+    "Signin_with_google": "เข้าสู่ระบบด้วย Google",
+    "Question_register": "คุณยังไม่ได้เป็นสมาชิกใช่ไหม?",
+    "signup": "สมัครสมาชิก"
   },
-  "formAuth":{
+  "formAuth": {
     "register": "สมัครสมาชิก",
-    "title_signin":"ล็อกอินเข้าสู่ระบบ",
+    "title_signin": "ล็อกอินเข้าสู่ระบบ",
     "title": "สมัครสมาชิก",
     "email": "อีเมล",
     "name_lastname": "ชื่อ-นามสกุล",
@@ -53,6 +54,18 @@
     "agreeNews": "ต้องการรับข่าวสารและโปรโมชันจาก ParkX",
     "already_member": "คุณเป็นสมาชิกแล้ว?",
     "password_not_match": "รหัสผ่านใหม่ที่คุณป้อนไม่ตรงกัน!"
-
+  },
+  "alert": {
+    "please_conferm_terms_of_use": "กรุณายืนยันข้อกำหนดการใช้งาน",
+    "please_conferm_company_policy": "กรุณายืนยันนโยบายของบริษัท",
+    "error_register": "เกิดข้อผิดพลาดในการสมัครสมาชิก กรุณาลองใหม่อีกครั้ง"
+  },
+  "otp": {
+    "title": "กรอกรหัสยืนยันตัวตน",
+    "description": "ระบบส่งรหัส OTP ไปยังอีเมล",
+    "btn_text": "ยืนยัน",
+    "minutes": "นาที",
+    "register_success": "สมัครสมาชิกสำเร็จ",
+    "register_success_description": "กรุณาเข้าสู่ระบบเพื่อใช้งาน"
   }
 }

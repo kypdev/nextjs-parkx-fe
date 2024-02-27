@@ -5,6 +5,7 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import CookieConsent from '@/components/CookieConsent';
+import ModalMessages from '@/components/modal/ModalMessages';
 import { CustomProvider } from '../provider';
 
 const kanit = Kanit({
@@ -29,31 +30,29 @@ export default function RootLayout({
   const messages = useMessages();
   return (
     <>
-      <CustomProvider>
-        <html lang={locale}>
-          <head>
-            <link
-              rel="shortcut icon"
-              href="./favicon.ico"
-              type="image/x-icon"
-            />
-          </head>
-          <body className={kanit.className}>
-            <NextIntlClientProvider messages={messages}>
-              <div className="w-full relative bg-seconday-white-ffffff overflow-hidden flex flex-col items-center justify-start gap-[2.56rem] tracking-[normal] text-left text-[0.63rem] text-seconday-white-ffffff font-p6-prompt-reg-12 mq450:gap-[1.25rem]">
-                <div className="w-[13.13rem] h-[1.25rem] relative bg-firebrick hidden" />
+      <html lang={locale}>
+        <head>
+          <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        </head>
+        <body className={kanit.className}>
+          <NextIntlClientProvider messages={messages}>
+            <div className="w-full relative bg-seconday-white-ffffff overflow-hidden flex flex-col items-center justify-start gap-[2.56rem] tracking-[normal] text-left text-[0.63rem] text-seconday-white-ffffff font-p6-prompt-reg-12 mq450:gap-[1.25rem]">
+              <div className="w-[13.13rem] h-[1.25rem] relative bg-firebrick hidden" />
+              <CustomProvider>
                 <Navbar />
-                {children}
-                <section className="w-[79.75rem] flex flex-row items-start justify-end py-[0rem] px-[1.25rem] box-border max-w-full">
-                  <div className="w-[71.31rem] flex flex-col items-start justify-start gap-[3.38rem] max-w-full mq900:gap-[1.69rem]"></div>
-                </section>
-                <Footer />
-              </div>
-              <CookieConsent />
-            </NextIntlClientProvider>
-          </body>
-        </html>
-      </CustomProvider>
+              </CustomProvider>
+
+              {children}
+              <section className="w-[79.75rem] flex flex-row items-start justify-end py-[0rem] px-[1.25rem] box-border max-w-full">
+                <div className="w-[71.31rem] flex flex-col items-start justify-start gap-[3.38rem] max-w-full mq900:gap-[1.69rem]"></div>
+              </section>
+              <ModalMessages />
+              <Footer />
+            </div>
+            <CookieConsent />
+          </NextIntlClientProvider>
+        </body>
+      </html>
     </>
   );
 }

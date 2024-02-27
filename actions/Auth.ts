@@ -1,3 +1,4 @@
+import { UserDetail } from '@/dto/UserDetail';
 import { AuthModel } from '@/dto/authModel/AuthModel';
 import { httpClient } from '@/lib/api';
 
@@ -25,25 +26,46 @@ const AuthAction = () => {
       password: data.password,
       register: true,
     };
-    var json = JSON.stringify(authModel);
-    await httpClient
-      .post('/auth/ValidateMember', authModel)
-      .then((res) => {
-        console.log('res', res.data);
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => {
-        console.log('finally');
-      });
 
-    console.log(authModel);
+    var json = JSON.stringify(authModel);
+    return await httpClient.post('/auth/ValidateMember', json);
+  };
+
+  const memberDetail = async (memberKey: string) => {
+    var authModel = {
+      memberKey: memberKey,
+    };
+    return await httpClient.post('/auth/ValidateMember', authModel);
+  };
+
+  const login = async (data: any) => {
+    var parameters = {
+      email: data.email,
+      password: data.password,
+    };
+    return await httpClient.post('/auth/ValidateMember', parameters);
+  };
+
+  const ValidateMember = async (data: any) => {
+    return await httpClient
+      .post('/auth/ValidateMember', data)
+      .then((res) => {
+        if (res.data.data) {
+          return res.data as UserDetail;
+        } else {
+          return null;
+        }
+      })
+      .catch((error) => {
+        return null;
+      });
   };
 
   return {
+    login,
     registerSubmit,
+    memberDetail,
+    ValidateMember,
   };
 };
 

@@ -5,7 +5,8 @@
     "news_promotion": "NEWS & PROMOTIONS",
     "contact_us": "CONTACT US",
     "signin": "Signin",
-    "signup": "Signup"
+    "signup": "Signup",
+    "signout": "Signout"
   },
   "LocaleSwitcher": {
     "label": "Change language",
@@ -55,5 +56,19 @@
     "already_member": "Already have an account?",
     "password_not_match":"The new password that you entered do not match! "
 
+  },
+  "alert":{
+    "please_conferm_terms_of_use": "Please confirm the terms of use",
+    "please_conferm_company_policy": "Please confirm the company policy",
+    "error_register": "Error Register Please try again"
+  },
+  "otp":{
+    "title": " verification code",
+    "description": "The system will send an OTP code to your email",
+    "btn_text": "Confirm",
+    "minutes": "minutes",
+    "register_success": "Register successfully",
+    "register_success_description": "You can now use the system"
   }
+
 }
