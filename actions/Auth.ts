@@ -1,3 +1,4 @@
+import { UserDetail } from '@/dto/UserDetail';
 import { AuthModel } from '@/dto/authModel/AuthModel';
 import { httpClient } from '@/lib/api';
 
@@ -38,7 +39,6 @@ const AuthAction = () => {
   };
 
   const login = async (data: any) => {
-    
     var parameters = {
       email: data.email,
       password: data.password,
@@ -46,16 +46,26 @@ const AuthAction = () => {
     return await httpClient.post('/auth/ValidateMember', parameters);
   };
 
-  const loginWithLine = async (memberKey: string) => {
-    
+  const ValidateMember = async (data: any) => {
+    return await httpClient
+      .post('/auth/ValidateMember', data)
+      .then((res) => {
+        if (res.data.data) {
+          return res.data as UserDetail;
+        } else {
+          return null;
+        }
+      })
+      .catch((error) => {
+        return null;
+      });
+  };
 
-    return await httpClient.get(`/auth/line/parkx/`);
-  }
   return {
     login,
     registerSubmit,
     memberDetail,
-    loginWithLine
+    ValidateMember,
   };
 };
 

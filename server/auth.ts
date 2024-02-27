@@ -3,23 +3,50 @@ import Credentials from 'next-auth/providers/credentials';
 import LineProvisers from 'next-auth/providers/line';
 import ActionAuth from '@/actions/Auth';
 import { userService } from './services/userService';
-const { login } = ActionAuth();
+import { UserDetail } from '@/dto/UserDetail';
+const { login, ValidateMember } = ActionAuth();
 export const authOptions: NextAuthOptions = {
   session: {
     strategy: 'jwt',
   },
   callbacks: {
     async jwt({ token, account, profile }) {
-      if (account && account.type === 'credentials') {
-        token.userId = account.providerAccountId;
+      if (account && account.provider === 'credentials') {
+        var prameterCheck = {
+          memberKey: token.sub,
+        };
+        var _userdetail = await ValidateMember(prameterCheck);
+        if (_userdetail) {
+          token.userDetail = _userdetail;
+          token.userId = _userdetail.memberKey;
+        }
+      }
+      if (account && account.provider === 'line') {
+        var prameterCheckLine = {
+          lineId: account.providerAccountId,
+        };
+        var _userdetail = await ValidateMember(prameterCheckLine);
+        if (!_userdetail) {
+          var insertUserWithLineID = {
+            lineId: account.providerAccountId,
+            fullName: token.name,
+            register: true,
+          };
+          var user = await ValidateMember(insertUserWithLineID);
+          if (user) {
+            token.userDetail = user;
+            token.userId = user.memberKey;
+          }
+        } else {
+          token.userDetail = _userdetail;
+          token.userId = _userdetail.memberKey;
+        }
       }
       return token;
     },
     async session({ session, token, user }) {
-      console.log('session', session);
-      console.log('token', token);
-      console.log('user', user);
       session.user.id = token.userId; //(3)
+      session.user.userDetail = token.userDetail;
       return session;
     },
   },
@@ -59,7 +86,7 @@ export const authOptions: NextAuthOptions = {
         return user;
       },
     }),
-   
+
     LineProvisers({
       clientId: process.env.AUTH_LINE_ID as string,
       clientSecret: process.env.AUTH_LINE_SECRET as string,
