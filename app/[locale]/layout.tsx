@@ -36,7 +36,7 @@ export default function RootLayout({
         </head>
         <body className={kanit.className}>
           <NextIntlClientProvider messages={messages}>
-            <div className="w-full relative bg-seconday-white-ffffff overflow-hidden flex flex-col items-center justify-start gap-[2.56rem] tracking-[normal] text-left text-[0.63rem] text-seconday-white-ffffff font-p6-prompt-reg-12 mq450:gap-[1.25rem]">
+            <div className="w-full relative bg-[#ffffff] overflow-hidden flex flex-col items-center justify-start gap-[2.56rem] tracking-[normal] text-left text-[0.63rem]  font-p6-prompt-reg-12 mq450:gap-[1.25rem]">
               <div className="w-[13.13rem] h-[1.25rem] relative bg-firebrick hidden" />
               <CustomProvider>
                 <Navbar />
